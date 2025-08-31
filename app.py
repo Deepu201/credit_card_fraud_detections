@@ -132,8 +132,8 @@ import seaborn as sns
 # ==========================
 @st.cache_resource
 def load_model():
-    model_path = r"C:\Users\HP\Desktop\movi\fraud_model.pkl"
-    model = joblib.load(model_path)
+    # model_path = r"C:\Users\HP\Desktop\movi\fraud_model.pkl"
+    model = joblib.load("model.pkl")  # relative, not absolute path
     return model
 
 model = load_model()
